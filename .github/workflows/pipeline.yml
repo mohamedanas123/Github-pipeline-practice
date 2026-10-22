@@ -1,0 +1,19 @@
+
+name: My First Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    
+      - name: Pipeline completed
+        run: echo "GitHub Actions pipeline succeeded!"
